@@ -7,6 +7,7 @@
 <title>अनापत्ति प्रमाण-पत्र | BPSC TRE-4.0</title>
 
 <style>
+
 *{
     box-sizing:border-box;
 }
@@ -26,6 +27,7 @@ body{
     color:#111;
     font-family:"Noto Sans Devanagari","Mangal","Nirmala UI",Arial,sans-serif;
 }
+
 
 /* ================= TOOLBAR ================= */
 
@@ -53,6 +55,7 @@ body{
     background:#dc3545;
 }
 
+
 /* ================= A4 PAGE ================= */
 
 .page{
@@ -64,6 +67,7 @@ body{
     box-shadow:0 0 8px rgba(0,0,0,.20);
     overflow:hidden;
 }
+
 
 /* ================= HEADER ================= */
 
@@ -93,6 +97,7 @@ body{
     margin-bottom:20px;
 }
 
+
 /* ================= CONTENT ================= */
 
 .content{
@@ -100,6 +105,7 @@ body{
     line-height:2.08;
     text-align:justify;
 }
+
 
 /* ================= FORM FIELDS ================= */
 
@@ -121,6 +127,7 @@ body{
     background:#eef6ff;
 }
 
+
 /* ================= FIELD WIDTHS ================= */
 
 .name{
@@ -131,9 +138,35 @@ body{
     width:155px;
 }
 
+
+/* =================================================
+   LETTER NUMBER
+   Long reference number support
+================================================= */
+
 .letter{
-    width:160px;
+    width:285px;
+    min-width:285px;
+
+    font-family:
+        "Noto Sans Devanagari",
+        "Mangal",
+        "Nirmala UI",
+        Arial,
+        sans-serif;
+
+    font-size:15px;
+
+    text-align:left;
+
+    letter-spacing:0;
 }
+
+
+/* Example:
+DAR/ADV-26/2023/GT (1-5)/5977242
+*/
+
 
 .school{
     width:180px;
@@ -163,6 +196,7 @@ body{
     width:125px;
 }
 
+
 /* ================= SELECT ================= */
 
 select.field{
@@ -177,11 +211,13 @@ select.field option{
     background:#fff;
 }
 
+
 /* ================= DATE ================= */
 
 input[type="date"]{
     min-height:29px;
 }
+
 
 /* ================= WISH ================= */
 
@@ -189,6 +225,7 @@ input[type="date"]{
     margin-top:25px;
     font-size:17px;
 }
+
 
 /* ================= SIGNATURE ================= */
 
@@ -213,6 +250,7 @@ input[type="date"]{
     font-size:14px;
     font-weight:normal;
 }
+
 
 /* ================= CHANNEL POPUP ================= */
 
@@ -281,6 +319,7 @@ input[type="date"]{
     margin-top:8px;
 }
 
+
 /* ================= MOBILE ================= */
 
 @media(max-width:850px){
@@ -300,14 +339,21 @@ input[type="date"]{
         max-width:100%;
     }
 
+    .letter{
+        width:100%;
+        min-width:0;
+        font-size:15px;
+    }
+
     .signatures{
         margin-top:45px;
     }
 }
 
-/* =====================================================
+
+/* =================================================
    PRINT
-===================================================== */
+================================================= */
 
 @media print{
 
@@ -333,7 +379,8 @@ input[type="date"]{
         overflow:hidden;
     }
 
-    /* Cursor completely hidden in print */
+
+    /* Cursor completely hidden */
 
     .field{
         background:transparent !important;
@@ -371,11 +418,6 @@ input[type="date"]{
     input[type="date"]::-webkit-calendar-picker-indicator{
         display:none !important;
     }
-}
-
-/* ================= PRINT COLORS ================= */
-
-@media print{
 
     *{
         -webkit-print-color-adjust:exact !important;
@@ -383,14 +425,17 @@ input[type="date"]{
     }
 
 }
+
 </style>
 </head>
 
+
 <body>
 
-<!-- =====================================================
+
+<!-- =================================================
      TOOLBAR
-===================================================== -->
+================================================= -->
 
 <div class="toolbar">
 
@@ -402,6 +447,7 @@ input[type="date"]{
         🖨️ प्रिंट / PDF
 
     </button>
+
 
     <button
         type="button"
@@ -415,11 +461,13 @@ input[type="date"]{
 </div>
 
 
-<!-- =====================================================
+
+<!-- =================================================
      A4 DOCUMENT
-===================================================== -->
+================================================= -->
 
 <div class="page">
+
 
     <!-- ================= HEADER ================= -->
 
@@ -440,6 +488,7 @@ input[type="date"]{
 
         </div>
 
+
         <div class="title">
 
             अनापत्ति प्रमाण-पत्र
@@ -447,6 +496,7 @@ input[type="date"]{
         </div>
 
     </div>
+
 
 
     <!-- ================= SUBTITLE ================= -->
@@ -458,9 +508,11 @@ input[type="date"]{
     </div>
 
 
+
     <!-- ================= MAIN CONTENT ================= -->
 
     <div class="content">
+
 
         प्रमाणित किया जाता है कि श्री / श्रीमती
 
@@ -471,6 +523,7 @@ input[type="date"]{
             placeholder="नाम"
             required>
 
+
         पिता / पति
 
         <input
@@ -480,14 +533,17 @@ input[type="date"]{
             placeholder="नाम"
             required>
 
+
         द्वारा निर्गत विद्यालय पदस्थापन पत्र के पत्रांक
 
         <input
             type="text"
             class="field letter"
             id="letterNo"
-            placeholder="पत्रांक"
-            required>
+            placeholder="DAR/ADV-26/2023/GT (1-5)/5977242"
+            required
+            autocomplete="off">
+
 
         दिनांक-
 
@@ -496,6 +552,7 @@ input[type="date"]{
             class="field date"
             id="letterDate"
             required>
+
 
         के तहत विद्यालय
 
@@ -506,6 +563,7 @@ input[type="date"]{
             placeholder="विद्यालय का नाम"
             required>
 
+
         प्रखंड-
 
         <input
@@ -514,6 +572,7 @@ input[type="date"]{
             id="block"
             placeholder="प्रखंड"
             required>
+
 
         , जिला-
 
@@ -524,6 +583,7 @@ input[type="date"]{
             placeholder="जिला"
             required>
 
+
         में विषय-
 
         <input
@@ -532,6 +592,7 @@ input[type="date"]{
             id="subject"
             placeholder="विषय"
             required>
+
 
         , पद-
 
@@ -550,11 +611,13 @@ input[type="date"]{
                 नियोजित शिक्षक
             </option>
 
-            <option value=" विद्यालय अध्यापक">
-                 विद्यालय अध्यापक
+            <option value="विद्यालय अध्यापक">
+                विद्यालय अध्यापक
             </option>
+
             <option value="नियमित शिक्षक">
                 नियमित शिक्षक
+            </option>
 
             <option value="विशिष्ट शिक्षक">
                 विशिष्ट शिक्षक
@@ -619,6 +682,7 @@ input[type="date"]{
             id="workDate"
             required>
 
+
         से कार्यरत हैं।
 
 
@@ -627,7 +691,9 @@ input[type="date"]{
 
         बिहार लोक सेवा आयोग के विज्ञापन संख्या-15/2026 के आलोक में शिक्षा विभाग बिहार के अन्तर्गत आयोजित विद्यालय अध्यापक प्रतियोगिता परीक्षा (TRE-4.0) के प्राथमिक (1-5) / मध्य (6-8) / माध्यमिक (9-10) / उच्च माध्यमिक (11-12) विद्यालय अध्यापक के पद पर नियुक्ति के लिए परीक्षा में सम्मिलित होने हेतु किसी प्रकार की विभागीय आपत्ति नहीं है।
 
+
     </div>
+
 
 
     <!-- ================= WISH ================= -->
@@ -639,9 +705,11 @@ input[type="date"]{
     </div>
 
 
+
     <!-- ================= SIGNATURE ================= -->
 
     <div class="signatures">
+
 
         <div class="signature-left">
 
@@ -668,24 +736,29 @@ input[type="date"]{
 
         </div>
 
+
     </div>
 
 </div>
 
 
-<!-- =====================================================
+
+<!-- =================================================
      DEO OFFICE WHATSAPP CHANNEL POPUP
-===================================================== -->
+================================================= -->
 
 <div
     class="overlay"
     id="joinOverlay">
 
+
     <div class="join-box">
+
 
         <h2>
             📢 DEO Office
         </h2>
+
 
         <p>
 
@@ -694,6 +767,7 @@ input[type="date"]{
             से जुड़ना आवश्यक है।
 
         </p>
+
 
         <a
             href="https://whatsapp.com/channel/0029VaIhMoY35fM4YK5xrz3P"
@@ -706,7 +780,9 @@ input[type="date"]{
 
         </a>
 
+
         <br>
+
 
         <button
             type="button"
@@ -719,6 +795,7 @@ input[type="date"]{
 
         </button>
 
+
         <div class="small">
 
             Channel link पर क्लिक करने के बाद
@@ -730,29 +807,35 @@ input[type="date"]{
 
         </div>
 
+
     </div>
 
 </div>
 
 
+
 <script>
 
-/* =====================================================
+
+/* =================================================
    CHANNEL JOIN
-===================================================== */
+================================================= */
 
 const JOIN_KEY =
     "deooffice_tre4_noc_channel_joined";
+
 
 const overlay =
     document.getElementById(
         "joinOverlay"
     );
 
+
 const joinChannel =
     document.getElementById(
         "joinChannel"
     );
+
 
 const openFormButton =
     document.getElementById(
@@ -787,8 +870,10 @@ joinChannel.addEventListener(
             "1"
         );
 
+
         openFormButton.disabled =
             false;
+
 
         openFormButton.innerHTML =
             "✓ फॉर्म खोलें";
@@ -806,15 +891,16 @@ function openForm(){
         "1"
     );
 
+
     overlay.style.display =
         "none";
 
 }
 
 
-/* =====================================================
+/* =================================================
    PRINT
-===================================================== */
+================================================= */
 
 function printForm(){
 
@@ -822,6 +908,7 @@ function printForm(){
         document.querySelectorAll(
             "[required]"
         );
+
 
     let firstEmpty = null;
 
@@ -849,7 +936,9 @@ function printForm(){
             "कृपया सभी आवश्यक विवरण भरें।"
         );
 
+
         firstEmpty.focus();
+
 
         return;
 
@@ -884,9 +973,9 @@ function printForm(){
 }
 
 
-/* =====================================================
+/* =================================================
    CLEAR FORM
-===================================================== */
+================================================= */
 
 function clearForm(){
 
@@ -916,9 +1005,9 @@ function clearForm(){
 }
 
 
-/* =====================================================
+/* =================================================
    AFTER PRINT
-===================================================== */
+================================================= */
 
 window.addEventListener(
     "afterprint",
@@ -936,6 +1025,7 @@ window.addEventListener(
 );
 
 </script>
+
 
 </body>
 </html>
