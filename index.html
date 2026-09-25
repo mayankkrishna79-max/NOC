@@ -7,7 +7,6 @@
 <title>अनापत्ति प्रमाण-पत्र | BPSC TRE-4.0</title>
 
 <style>
-
 *{
     box-sizing:border-box;
 }
@@ -25,14 +24,8 @@ html,body{
 body{
     background:#e9e9e9;
     color:#111;
-    font-family:
-        "Noto Sans Devanagari",
-        "Mangal",
-        "Nirmala UI",
-        Arial,
-        sans-serif;
+    font-family:"Noto Sans Devanagari","Mangal","Nirmala UI",Arial,sans-serif;
 }
-
 
 /* ================= TOOLBAR ================= */
 
@@ -60,28 +53,17 @@ body{
     background:#dc3545;
 }
 
-
 /* ================= A4 PAGE ================= */
 
 .page{
     width:210mm;
     height:297mm;
-
     margin:0 auto 20px;
-
     background:#fff;
-
-    padding:
-        15mm
-        15mm
-        12mm;
-
-    box-shadow:
-        0 0 8px rgba(0,0,0,.20);
-
+    padding:15mm 15mm 12mm;
+    box-shadow:0 0 8px rgba(0,0,0,.20);
     overflow:hidden;
 }
-
 
 /* ================= HEADER ================= */
 
@@ -97,73 +79,49 @@ body{
 
 .title{
     display:inline-block;
-
     margin-top:6px;
-
     font-size:21px;
     font-weight:bold;
-
     text-decoration:underline;
 }
 
 .subtitle{
     text-align:center;
-
     font-size:18px;
-
     font-weight:bold;
-
     margin-top:20px;
     margin-bottom:20px;
 }
-
 
 /* ================= CONTENT ================= */
 
 .content{
     font-size:17px;
-
     line-height:2.08;
-
     text-align:justify;
 }
-
 
 /* ================= FORM FIELDS ================= */
 
 .field{
     border:none;
-
-    border-bottom:
-        1px dotted #555;
-
+    border-bottom:1px dotted #555;
     background:transparent;
-
     outline:none;
-
     font-family:inherit;
-
     font-size:inherit;
-
     color:#000;
-
-    padding:
-        0 3px;
-
+    padding:0 3px;
     text-align:center;
-
     vertical-align:middle;
 }
 
 .field:focus{
-    border-bottom:
-        1.5px solid #0d6efd;
-
+    border-bottom:1.5px solid #0d6efd;
     background:#eef6ff;
 }
 
-
-/* FIELD WIDTHS */
+/* ================= FIELD WIDTHS ================= */
 
 .name{
     width:170px;
@@ -194,232 +152,158 @@ body{
 }
 
 .post{
-    width:140px;
+    width:190px;
+}
+
+.classLevel{
+    width:100px;
 }
 
 .date{
     width:125px;
 }
 
-
 /* ================= SELECT ================= */
 
 select.field{
-
     appearance:auto;
-
     -webkit-appearance:auto;
-
     cursor:pointer;
-
     background:transparent;
 }
 
 select.field option{
-
     color:#000;
-
     background:#fff;
 }
-
 
 /* ================= DATE ================= */
 
 input[type="date"]{
-
     min-height:29px;
 }
-
 
 /* ================= WISH ================= */
 
 .wish{
-
     margin-top:25px;
-
     font-size:17px;
 }
-
 
 /* ================= SIGNATURE ================= */
 
 .signatures{
-
     display:grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
+    grid-template-columns:1fr 1fr;
     margin-top:58px;
-
     font-size:16px;
-
     font-weight:bold;
 }
 
 .signature-left{
-
     text-align:left;
 }
 
 .signature-right{
-
     text-align:right;
 }
 
 .sign-note{
-
     margin-top:43px;
-
     font-size:14px;
-
     font-weight:normal;
 }
-
 
 /* ================= CHANNEL POPUP ================= */
 
 .overlay{
-
     position:fixed;
-
     inset:0;
-
-    background:
-        rgba(0,0,0,.72);
-
+    background:rgba(0,0,0,.72);
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     z-index:9999;
-
     padding:20px;
 }
 
 .join-box{
-
     width:450px;
-
     max-width:100%;
-
     background:#fff;
-
     border-radius:14px;
-
     padding:25px;
-
     text-align:center;
-
-    box-shadow:
-        0 15px 50px
-        rgba(0,0,0,.40);
+    box-shadow:0 15px 50px rgba(0,0,0,.40);
 }
 
 .join-box h2{
-
     margin-top:0;
-
     font-size:23px;
 }
 
 .join-box p{
-
     line-height:1.7;
-
     color:#444;
 }
 
 .join-btn{
-
     display:inline-block;
-
     background:#25D366;
-
     color:#fff;
-
     text-decoration:none;
-
     padding:12px 20px;
-
     border-radius:7px;
-
     font-weight:bold;
-
     margin:8px;
 }
 
 .open-btn{
-
     background:#0d6efd;
-
     color:#fff;
-
     border:none;
-
     padding:12px 25px;
-
     border-radius:7px;
-
     font-family:inherit;
-
     font-size:15px;
-
     cursor:pointer;
-
     margin:8px;
 }
 
 .open-btn:disabled{
-
     opacity:.4;
-
     cursor:not-allowed;
 }
 
 .small{
-
     font-size:12px;
-
     color:#777;
-
     margin-top:8px;
 }
-
 
 /* ================= MOBILE ================= */
 
 @media(max-width:850px){
 
     .page{
-
         width:100%;
-
         height:auto;
-
         min-height:297mm;
-
         padding:20px;
     }
 
     .content{
-
         font-size:16px;
     }
 
     .field{
-
         max-width:100%;
     }
 
     .signatures{
-
         margin-top:45px;
     }
 }
-
 
 /* =====================================================
    PRINT
@@ -429,141 +313,80 @@ input[type="date"]{
 
     html,
     body{
-
         width:210mm;
-
         height:297mm;
-
         background:#fff;
     }
 
-
     .toolbar,
     .overlay{
-
         display:none !important;
     }
 
-
     .page{
-
         width:210mm;
-
         height:297mm;
-
         min-height:297mm;
-
         margin:0;
-
-        padding:
-            15mm
-            15mm
-            12mm;
-
+        padding:15mm 15mm 12mm;
         box-shadow:none;
-
         overflow:hidden;
     }
 
-
-    /*
-       PRINT में INPUT editable नहीं रहेगा।
-       Cursor / blinking caret दिखाई नहीं देगा।
-    */
+    /* Cursor completely hidden in print */
 
     .field{
-
-        background:
-            transparent !important;
-
+        background:transparent !important;
         color:#000 !important;
-
         outline:none !important;
-
         box-shadow:none !important;
-
-        caret-color:
-            transparent !important;
-
+        caret-color:transparent !important;
         cursor:default !important;
-
         pointer-events:none !important;
     }
-
 
     .field:focus,
     .field:active{
-
         outline:none !important;
-
-        background:
-            transparent !important;
-
+        background:transparent !important;
         box-shadow:none !important;
-
-        caret-color:
-            transparent !important;
+        caret-color:transparent !important;
     }
 
-
     select.field{
-
         appearance:none !important;
-
         -webkit-appearance:none !important;
-
-        background:
-            transparent !important;
-
+        background:transparent !important;
         pointer-events:none !important;
-
         cursor:default !important;
     }
 
-
     input[type="date"]{
-
         appearance:none !important;
-
         -webkit-appearance:none !important;
-
-        background:
-            transparent !important;
-
+        background:transparent !important;
         pointer-events:none !important;
     }
 
-
     input[type="date"]::-webkit-calendar-picker-indicator{
-
         display:none !important;
     }
-
 }
-
 
 /* ================= PRINT COLORS ================= */
 
 @media print{
 
     *{
-
-        -webkit-print-color-adjust:
-            exact !important;
-
-        print-color-adjust:
-            exact !important;
+        -webkit-print-color-adjust:exact !important;
+        print-color-adjust:exact !important;
     }
 
 }
-
 </style>
-
 </head>
 
-
 <body>
-
 
 <!-- =====================================================
      TOOLBAR
@@ -580,7 +403,6 @@ input[type="date"]{
 
     </button>
 
-
     <button
         type="button"
         class="clearBtn"
@@ -593,18 +415,15 @@ input[type="date"]{
 </div>
 
 
-
 <!-- =====================================================
      A4 DOCUMENT
 ===================================================== -->
 
 <div class="page">
 
-
     <!-- ================= HEADER ================= -->
 
     <div class="header">
-
 
         <div class="office">
 
@@ -621,7 +440,6 @@ input[type="date"]{
 
         </div>
 
-
         <div class="title">
 
             अनापत्ति प्रमाण-पत्र
@@ -629,7 +447,6 @@ input[type="date"]{
         </div>
 
     </div>
-
 
 
     <!-- ================= SUBTITLE ================= -->
@@ -641,14 +458,11 @@ input[type="date"]{
     </div>
 
 
-
     <!-- ================= MAIN CONTENT ================= -->
 
     <div class="content">
 
-
         प्रमाणित किया जाता है कि श्री / श्रीमती
-
 
         <input
             type="text"
@@ -657,9 +471,7 @@ input[type="date"]{
             placeholder="नाम"
             required>
 
-
         पिता / पति
-
 
         <input
             type="text"
@@ -668,9 +480,7 @@ input[type="date"]{
             placeholder="नाम"
             required>
 
-
         द्वारा निर्गत विद्यालय पदस्थापन पत्र के पत्रांक
-
 
         <input
             type="text"
@@ -679,9 +489,7 @@ input[type="date"]{
             placeholder="पत्रांक"
             required>
 
-
         दिनांक-
-
 
         <input
             type="date"
@@ -689,9 +497,7 @@ input[type="date"]{
             id="letterDate"
             required>
 
-
         के तहत विद्यालय
-
 
         <input
             type="text"
@@ -700,9 +506,7 @@ input[type="date"]{
             placeholder="विद्यालय का नाम"
             required>
 
-
         प्रखंड-
-
 
         <input
             type="text"
@@ -711,9 +515,7 @@ input[type="date"]{
             placeholder="प्रखंड"
             required>
 
-
         , जिला-
-
 
         <input
             type="text"
@@ -722,9 +524,7 @@ input[type="date"]{
             placeholder="जिला"
             required>
 
-
         में विषय-
-
 
         <input
             type="text"
@@ -733,9 +533,9 @@ input[type="date"]{
             placeholder="विषय"
             required>
 
-
         , पद-
 
+        <!-- ================= पद ================= -->
 
         <select
             class="field post"
@@ -743,23 +543,69 @@ input[type="date"]{
             required>
 
             <option value="">
-                पद / कक्षा चुनें
+                पद चुनें
             </option>
 
-            <option value="कक्षा 1-5">
-                कक्षा 1-5
+            <option value="नियोजित शिक्षक">
+                नियोजित शिक्षक
             </option>
 
-            <option value="कक्षा 6-8">
-                कक्षा 6-8
+            <option value=" विद्यालय अध्यापक">
+                 विद्यालय अध्यापक
+            </option>
+            <option value="नियमित शिक्षक">
+                नियमित शिक्षक
+
+            <option value="विशिष्ट शिक्षक">
+                विशिष्ट शिक्षक
             </option>
 
-            <option value="कक्षा 9-10">
-                कक्षा 9-10
+            <option value="प्रधानाध्यापक">
+                प्रधानाध्यापक
             </option>
 
-            <option value="कक्षा 11-12">
-                कक्षा 11-12
+            <option value="प्रधानाचार्य">
+                प्रधानाचार्य
+            </option>
+
+        </select>
+
+
+        , कक्षा-
+
+        <!-- ================= कक्षा ================= -->
+
+        <select
+            class="field classLevel"
+            id="classLevel"
+            required>
+
+            <option value="">
+                कक्षा चुनें
+            </option>
+
+            <option value="1-5">
+                1-5
+            </option>
+
+            <option value="1-8">
+                1-8
+            </option>
+
+            <option value="6-8">
+                6-8
+            </option>
+
+            <option value="9-10">
+                9-10
+            </option>
+
+            <option value="9-12">
+                9-12
+            </option>
+
+            <option value="11-12">
+                11-12
             </option>
 
         </select>
@@ -767,13 +613,11 @@ input[type="date"]{
 
         पर दिनांक-
 
-
         <input
             type="date"
             class="field date"
             id="workDate"
             required>
-
 
         से कार्यरत हैं।
 
@@ -783,9 +627,7 @@ input[type="date"]{
 
         बिहार लोक सेवा आयोग के विज्ञापन संख्या-15/2026 के आलोक में शिक्षा विभाग बिहार के अन्तर्गत आयोजित विद्यालय अध्यापक प्रतियोगिता परीक्षा (TRE-4.0) के प्राथमिक (1-5) / मध्य (6-8) / माध्यमिक (9-10) / उच्च माध्यमिक (11-12) अध्यापक के पद पर नियुक्ति के लिए परीक्षा में सम्मिलित होने हेतु किसी प्रकार की विभागीय आपत्ति नहीं है।
 
-
     </div>
-
 
 
     <!-- ================= WISH ================= -->
@@ -797,11 +639,9 @@ input[type="date"]{
     </div>
 
 
-
     <!-- ================= SIGNATURE ================= -->
 
     <div class="signatures">
-
 
         <div class="signature-left">
 
@@ -828,32 +668,24 @@ input[type="date"]{
 
         </div>
 
-
     </div>
-
 
 </div>
 
 
-
 <!-- =====================================================
-     DEO OFFICE WHATSAPP CHANNEL
+     DEO OFFICE WHATSAPP CHANNEL POPUP
 ===================================================== -->
 
 <div
     class="overlay"
     id="joinOverlay">
 
-
     <div class="join-box">
 
-
         <h2>
-
             📢 DEO Office
-
         </h2>
-
 
         <p>
 
@@ -862,7 +694,6 @@ input[type="date"]{
             से जुड़ना आवश्यक है।
 
         </p>
-
 
         <a
             href="https://whatsapp.com/channel/0029VaIhMoY35fM4YK5xrz3P"
@@ -875,9 +706,7 @@ input[type="date"]{
 
         </a>
 
-
         <br>
-
 
         <button
             type="button"
@@ -890,7 +719,6 @@ input[type="date"]{
 
         </button>
 
-
         <div class="small">
 
             Channel link पर क्लिक करने के बाद
@@ -902,11 +730,9 @@ input[type="date"]{
 
         </div>
 
-
     </div>
 
 </div>
-
 
 
 <script>
@@ -934,7 +760,10 @@ const openFormButton =
     );
 
 
-/* पहले से click किया हो तो popup नहीं */
+/*
+   यदि पहले ही Channel link click किया जा चुका है
+   तो popup दोबारा नहीं दिखेगा।
+*/
 
 if(
     localStorage.getItem(JOIN_KEY)
@@ -1027,9 +856,7 @@ function printForm(){
     }
 
 
-    /*
-       सबसे पहले active cursor हटाएं
-    */
+    /* Active cursor हटाएं */
 
     if(
         document.activeElement
@@ -1040,16 +867,10 @@ function printForm(){
     }
 
 
-    /*
-       कोई field focus में न रहे
-    */
-
     document.body.focus();
 
 
-    /*
-       Print शुरू करें
-    */
+    /* Print */
 
     setTimeout(
         function(){
@@ -1064,7 +885,7 @@ function printForm(){
 
 
 /* =====================================================
-   CLEAR
+   CLEAR FORM
 ===================================================== */
 
 function clearForm(){
@@ -1115,7 +936,6 @@ window.addEventListener(
 );
 
 </script>
-
 
 </body>
 </html>
