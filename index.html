@@ -7,6 +7,7 @@
 <title>अनापत्ति प्रमाण-पत्र | BPSC TRE-4.0</title>
 
 <style>
+
 *{
     box-sizing:border-box;
 }
@@ -16,12 +17,22 @@
     margin:0;
 }
 
-body{
+html,body{
     margin:0;
+    padding:0;
+}
+
+body{
     background:#e9e9e9;
     color:#111;
-    font-family:"Noto Sans Devanagari","Mangal","Nirmala UI",Arial,sans-serif;
+    font-family:
+        "Noto Sans Devanagari",
+        "Mangal",
+        "Nirmala UI",
+        Arial,
+        sans-serif;
 }
+
 
 /* ================= TOOLBAR ================= */
 
@@ -49,17 +60,28 @@ body{
     background:#dc3545;
 }
 
+
 /* ================= A4 PAGE ================= */
 
 .page{
     width:210mm;
     height:297mm;
+
     margin:0 auto 20px;
+
     background:#fff;
-    padding:15mm 15mm 12mm;
-    box-shadow:0 0 8px rgba(0,0,0,.2);
+
+    padding:
+        15mm
+        15mm
+        12mm;
+
+    box-shadow:
+        0 0 8px rgba(0,0,0,.20);
+
     overflow:hidden;
 }
+
 
 /* ================= HEADER ================= */
 
@@ -75,47 +97,73 @@ body{
 
 .title{
     display:inline-block;
+
     margin-top:6px;
+
     font-size:21px;
     font-weight:bold;
+
     text-decoration:underline;
 }
 
 .subtitle{
     text-align:center;
+
     font-size:18px;
+
     font-weight:bold;
+
     margin-top:20px;
     margin-bottom:20px;
 }
+
 
 /* ================= CONTENT ================= */
 
 .content{
     font-size:17px;
+
     line-height:2.08;
+
     text-align:justify;
 }
 
-/* ================= INPUT ================= */
+
+/* ================= FORM FIELDS ================= */
 
 .field{
     border:none;
-    border-bottom:1px dotted #555;
+
+    border-bottom:
+        1px dotted #555;
+
     background:transparent;
+
     outline:none;
+
     font-family:inherit;
+
     font-size:inherit;
+
     color:#000;
-    padding:0 3px;
+
+    padding:
+        0 3px;
+
     text-align:center;
+
     vertical-align:middle;
 }
 
 .field:focus{
-    border-bottom:1.5px solid #0d6efd;
+    border-bottom:
+        1.5px solid #0d6efd;
+
     background:#eef6ff;
 }
+
+
+/* FIELD WIDTHS */
 
 .name{
     width:170px;
@@ -153,215 +201,410 @@ body{
     width:125px;
 }
 
+
 /* ================= SELECT ================= */
 
 select.field{
+
     appearance:auto;
+
     -webkit-appearance:auto;
+
     cursor:pointer;
+
     background:transparent;
 }
 
 select.field option{
+
     color:#000;
+
     background:#fff;
 }
+
 
 /* ================= DATE ================= */
 
 input[type="date"]{
+
     min-height:29px;
 }
+
 
 /* ================= WISH ================= */
 
 .wish{
+
     margin-top:25px;
+
     font-size:17px;
 }
+
 
 /* ================= SIGNATURE ================= */
 
 .signatures{
+
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+        1fr 1fr;
+
     margin-top:58px;
+
     font-size:16px;
+
     font-weight:bold;
 }
 
 .signature-left{
+
     text-align:left;
 }
 
 .signature-right{
+
     text-align:right;
 }
 
 .sign-note{
+
     margin-top:43px;
+
     font-size:14px;
+
     font-weight:normal;
 }
+
 
 /* ================= CHANNEL POPUP ================= */
 
 .overlay{
+
     position:fixed;
+
     inset:0;
-    background:rgba(0,0,0,.72);
+
+    background:
+        rgba(0,0,0,.72);
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     z-index:9999;
+
     padding:20px;
 }
 
 .join-box{
+
     width:450px;
+
     max-width:100%;
-    background:white;
+
+    background:#fff;
+
     border-radius:14px;
+
     padding:25px;
+
     text-align:center;
-    box-shadow:0 15px 50px rgba(0,0,0,.4);
+
+    box-shadow:
+        0 15px 50px
+        rgba(0,0,0,.40);
 }
 
 .join-box h2{
+
     margin-top:0;
+
     font-size:23px;
 }
 
 .join-box p{
+
     line-height:1.7;
+
     color:#444;
 }
 
 .join-btn{
+
     display:inline-block;
+
     background:#25D366;
-    color:white;
+
+    color:#fff;
+
     text-decoration:none;
+
     padding:12px 20px;
+
     border-radius:7px;
+
     font-weight:bold;
+
     margin:8px;
 }
 
 .open-btn{
+
     background:#0d6efd;
-    color:white;
+
+    color:#fff;
+
     border:none;
+
     padding:12px 25px;
+
     border-radius:7px;
+
     font-family:inherit;
+
     font-size:15px;
+
     cursor:pointer;
+
     margin:8px;
 }
 
 .open-btn:disabled{
+
     opacity:.4;
+
     cursor:not-allowed;
 }
 
 .small{
+
     font-size:12px;
+
     color:#777;
+
     margin-top:8px;
 }
+
 
 /* ================= MOBILE ================= */
 
 @media(max-width:850px){
 
     .page{
+
         width:100%;
+
         height:auto;
+
         min-height:297mm;
+
         padding:20px;
     }
 
     .content{
+
         font-size:16px;
     }
 
     .field{
+
         max-width:100%;
     }
 
     .signatures{
+
         margin-top:45px;
     }
 }
 
-/* ================= PRINT ================= */
+
+/* =====================================================
+   PRINT
+===================================================== */
 
 @media print{
 
     html,
     body{
+
         width:210mm;
+
         height:297mm;
+
         background:#fff;
     }
 
+
     .toolbar,
     .overlay{
+
         display:none !important;
     }
 
+
     .page{
+
         width:210mm;
+
         height:297mm;
+
         min-height:297mm;
+
         margin:0;
-        padding:15mm 15mm 12mm;
+
+        padding:
+            15mm
+            15mm
+            12mm;
+
         box-shadow:none;
+
         overflow:hidden;
     }
 
+
+    /*
+       PRINT में INPUT editable नहीं रहेगा।
+       Cursor / blinking caret दिखाई नहीं देगा।
+    */
+
     .field{
-        background:transparent !important;
+
+        background:
+            transparent !important;
+
         color:#000 !important;
+
+        outline:none !important;
+
+        box-shadow:none !important;
+
+        caret-color:
+            transparent !important;
+
+        cursor:default !important;
+
+        pointer-events:none !important;
     }
 
-    select.field{
-        appearance:none;
-        -webkit-appearance:none;
+
+    .field:focus,
+    .field:active{
+
+        outline:none !important;
+
+        background:
+            transparent !important;
+
+        box-shadow:none !important;
+
+        caret-color:
+            transparent !important;
     }
+
+
+    select.field{
+
+        appearance:none !important;
+
+        -webkit-appearance:none !important;
+
+        background:
+            transparent !important;
+
+        pointer-events:none !important;
+
+        cursor:default !important;
+    }
+
+
+    input[type="date"]{
+
+        appearance:none !important;
+
+        -webkit-appearance:none !important;
+
+        background:
+            transparent !important;
+
+        pointer-events:none !important;
+    }
+
+
+    input[type="date"]::-webkit-calendar-picker-indicator{
+
+        display:none !important;
+    }
+
 }
+
+
+/* ================= PRINT COLORS ================= */
+
+@media print{
+
+    *{
+
+        -webkit-print-color-adjust:
+            exact !important;
+
+        print-color-adjust:
+            exact !important;
+    }
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
-<!-- ================= BUTTONS ================= -->
+
+<!-- =====================================================
+     TOOLBAR
+===================================================== -->
 
 <div class="toolbar">
 
     <button
+        type="button"
         class="printBtn"
         onclick="printForm()">
+
         🖨️ प्रिंट / PDF
+
     </button>
 
+
     <button
+        type="button"
         class="clearBtn"
         onclick="clearForm()">
+
         ↻ फॉर्म साफ करें
+
     </button>
 
 </div>
 
 
-<!-- ================= A4 DOCUMENT ================= -->
+
+<!-- =====================================================
+     A4 DOCUMENT
+===================================================== -->
 
 <div class="page">
 
-    <!-- HEADER -->
+
+    <!-- ================= HEADER ================= -->
 
     <div class="header">
+
 
         <div class="office">
 
@@ -378,14 +621,18 @@ input[type="date"]{
 
         </div>
 
+
         <div class="title">
+
             अनापत्ति प्रमाण-पत्र
+
         </div>
 
     </div>
 
 
-    <!-- TITLE -->
+
+    <!-- ================= SUBTITLE ================= -->
 
     <div class="subtitle">
 
@@ -394,11 +641,14 @@ input[type="date"]{
     </div>
 
 
-    <!-- CERTIFICATE -->
+
+    <!-- ================= MAIN CONTENT ================= -->
 
     <div class="content">
 
+
         प्रमाणित किया जाता है कि श्री / श्रीमती
+
 
         <input
             type="text"
@@ -407,7 +657,9 @@ input[type="date"]{
             placeholder="नाम"
             required>
 
+
         पिता / पति
+
 
         <input
             type="text"
@@ -416,7 +668,9 @@ input[type="date"]{
             placeholder="नाम"
             required>
 
+
         द्वारा निर्गत विद्यालय पदस्थापन पत्र के पत्रांक
+
 
         <input
             type="text"
@@ -425,7 +679,9 @@ input[type="date"]{
             placeholder="पत्रांक"
             required>
 
+
         दिनांक-
+
 
         <input
             type="date"
@@ -433,7 +689,9 @@ input[type="date"]{
             id="letterDate"
             required>
 
+
         के तहत विद्यालय
+
 
         <input
             type="text"
@@ -442,7 +700,9 @@ input[type="date"]{
             placeholder="विद्यालय का नाम"
             required>
 
+
         प्रखंड-
+
 
         <input
             type="text"
@@ -451,7 +711,9 @@ input[type="date"]{
             placeholder="प्रखंड"
             required>
 
+
         , जिला-
+
 
         <input
             type="text"
@@ -460,7 +722,9 @@ input[type="date"]{
             placeholder="जिला"
             required>
 
+
         में विषय-
+
 
         <input
             type="text"
@@ -469,7 +733,9 @@ input[type="date"]{
             placeholder="विषय"
             required>
 
+
         , पद-
+
 
         <select
             class="field post"
@@ -498,7 +764,9 @@ input[type="date"]{
 
         </select>
 
+
         पर दिनांक-
+
 
         <input
             type="date"
@@ -506,15 +774,21 @@ input[type="date"]{
             id="workDate"
             required>
 
+
         से कार्यरत हैं।
+
+
+        <br><br>
 
 
         बिहार लोक सेवा आयोग के विज्ञापन संख्या-15/2026 के आलोक में शिक्षा विभाग बिहार के अन्तर्गत आयोजित विद्यालय अध्यापक प्रतियोगिता परीक्षा (TRE-4.0) के प्राथमिक (1-5) / मध्य (6-8) / माध्यमिक (9-10) / उच्च माध्यमिक (11-12) अध्यापक के पद पर नियुक्ति के लिए परीक्षा में सम्मिलित होने हेतु किसी प्रकार की विभागीय आपत्ति नहीं है।
 
+
     </div>
 
 
-    <!-- WISH -->
+
+    <!-- ================= WISH ================= -->
 
     <div class="wish">
 
@@ -523,16 +797,20 @@ input[type="date"]{
     </div>
 
 
-    <!-- SIGNATURE -->
+
+    <!-- ================= SIGNATURE ================= -->
 
     <div class="signatures">
+
 
         <div class="signature-left">
 
             प्रधानाध्यापक
 
             <div class="sign-note">
+
                 (हस्ताक्षर एवं मुहर)
+
             </div>
 
         </div>
@@ -543,40 +821,48 @@ input[type="date"]{
             जिला शिक्षा पदाधिकारी
 
             <div class="sign-note">
+
                 (हस्ताक्षर एवं मुहर)
+
             </div>
 
         </div>
 
+
     </div>
+
 
 </div>
 
 
+
 <!-- =====================================================
-     DEO OFFICE WHATSAPP CHANNEL JOIN POPUP
+     DEO OFFICE WHATSAPP CHANNEL
 ===================================================== -->
 
 <div
     class="overlay"
     id="joinOverlay">
 
+
     <div class="join-box">
 
+
         <h2>
+
             📢 DEO Office
+
         </h2>
+
 
         <p>
 
             ऑनलाइन अनापत्ति प्रमाण-पत्र तैयार करने के लिए
-            पहले <b>DEO Office WhatsApp Channel</b> से जुड़ना
-            आवश्यक है।
+            पहले <b>DEO Office WhatsApp Channel</b>
+            से जुड़ना आवश्यक है।
 
         </p>
 
-
-        <!-- ACTUAL DEO OFFICE CHANNEL LINK -->
 
         <a
             href="https://whatsapp.com/channel/0029VaIhMoY35fM4YK5xrz3P"
@@ -594,6 +880,7 @@ input[type="date"]{
 
 
         <button
+            type="button"
             class="open-btn"
             id="openForm"
             disabled
@@ -615,48 +902,52 @@ input[type="date"]{
 
         </div>
 
+
     </div>
 
 </div>
 
 
+
 <script>
 
 /* =====================================================
-   CHANNEL JOIN GATE
+   CHANNEL JOIN
 ===================================================== */
 
 const JOIN_KEY =
     "deooffice_tre4_noc_channel_joined";
 
 const overlay =
-    document.getElementById("joinOverlay");
+    document.getElementById(
+        "joinOverlay"
+    );
 
 const joinChannel =
-    document.getElementById("joinChannel");
+    document.getElementById(
+        "joinChannel"
+    );
 
 const openFormButton =
-    document.getElementById("openForm");
+    document.getElementById(
+        "openForm"
+    );
 
 
-/*
-   यदि इस browser में पहले Channel link
-   पर click किया जा चुका है तो popup दोबारा
-   नहीं दिखेगा।
-*/
+/* पहले से click किया हो तो popup नहीं */
 
 if(
-    localStorage.getItem(JOIN_KEY) === "1"
+    localStorage.getItem(JOIN_KEY)
+    === "1"
 ){
 
-    overlay.style.display = "none";
+    overlay.style.display =
+        "none";
 
 }
 
 
-/*
-   Channel link पर click
-*/
+/* Channel link click */
 
 joinChannel.addEventListener(
     "click",
@@ -667,7 +958,8 @@ joinChannel.addEventListener(
             "1"
         );
 
-        openFormButton.disabled = false;
+        openFormButton.disabled =
+            false;
 
         openFormButton.innerHTML =
             "✓ फॉर्म खोलें";
@@ -676,9 +968,7 @@ joinChannel.addEventListener(
 );
 
 
-/*
-   Form खोलना
-*/
+/* Form खोलें */
 
 function openForm(){
 
@@ -687,19 +977,22 @@ function openForm(){
         "1"
     );
 
-    overlay.style.display = "none";
+    overlay.style.display =
+        "none";
 
 }
 
 
 /* =====================================================
-   PRINT VALIDATION
+   PRINT
 ===================================================== */
 
 function printForm(){
 
     const requiredFields =
-        document.querySelectorAll("[required]");
+        document.querySelectorAll(
+            "[required]"
+        );
 
     let firstEmpty = null;
 
@@ -708,7 +1001,7 @@ function printForm(){
         function(field){
 
             if(
-                !field.value.trim()
+                !String(field.value).trim()
                 &&
                 !firstEmpty
             ){
@@ -734,24 +1027,53 @@ function printForm(){
     }
 
 
-    window.print();
+    /*
+       सबसे पहले active cursor हटाएं
+    */
+
+    if(
+        document.activeElement
+    ){
+
+        document.activeElement.blur();
+
+    }
+
+
+    /*
+       कोई field focus में न रहे
+    */
+
+    document.body.focus();
+
+
+    /*
+       Print शुरू करें
+    */
+
+    setTimeout(
+        function(){
+
+            window.print();
+
+        },
+        100
+    );
 
 }
 
 
 /* =====================================================
-   CLEAR FORM
+   CLEAR
 ===================================================== */
 
 function clearForm(){
 
-    const confirmClear =
-        confirm(
+    if(
+        !confirm(
             "क्या आप सभी भरे हुए विवरण साफ करना चाहते हैं?"
-        );
-
-
-    if(!confirmClear){
+        )
+    ){
 
         return;
 
@@ -759,7 +1081,9 @@ function clearForm(){
 
 
     document
-        .querySelectorAll("input, select")
+        .querySelectorAll(
+            "input, select"
+        )
         .forEach(
             function(element){
 
@@ -770,7 +1094,28 @@ function clearForm(){
 
 }
 
+
+/* =====================================================
+   AFTER PRINT
+===================================================== */
+
+window.addEventListener(
+    "afterprint",
+    function(){
+
+        if(
+            document.activeElement
+        ){
+
+            document.activeElement.blur();
+
+        }
+
+    }
+);
+
 </script>
+
 
 </body>
 </html>
